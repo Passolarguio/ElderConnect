@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "ElderConnect",
+    "slug": "elderconnect",
+    "scheme": "elderconnect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./src/assets/logo.png",
+    "splash": {"image":"./src/assets/logo.png","resizeMode":"contain","backgroundColor":"#124D37"},
+    "ios": {"supportsTablet":true,"infoPlist":{"NSLocationWhenInUseUsageDescription":"Sua localização pode ser usada, com sua autorização, para buscar atividades próximas."}},
+    "android": {"adaptiveIcon":{"foregroundImage":"./src/assets/logo.png","backgroundColor":"#ffffff"},"permissions":["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION"]},
+    "plugins": [["expo-image-picker", {"photosPermission":"Permita o acesso às fotos para escolher sua foto de perfil.","cameraPermission":"Permita o uso da câmera para sua foto de perfil.","microphonePermission":false}]],
+    "extra": {"academicDemo":true}
+  }
+}

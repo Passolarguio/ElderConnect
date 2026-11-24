@@ -1,0 +1,24 @@
+name: Verificar frontend Web
+on:
+  push:
+    paths:
+      - 'frontend-web/**'
+      - '.github/workflows/web-check.yml'
+  pull_request:
+    paths:
+      - 'frontend-web/**'
+      - '.github/workflows/web-check.yml'
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend-web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install
+      - run: npm test
+      - run: npm run build

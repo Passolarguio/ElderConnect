@@ -1,0 +1,29 @@
+# Dependências / builds
+**/node_modules/
+**/dist/
+**/.expo/
+**/.expo-shared/
+**/build/
+**/coverage/
+**/.gradle/
+**/android/.gradle/
+**/ios/Pods/
+# segredos / variáveis locais
+**/.env
+**/.env.*.local
+**/.env.local
+!.env.example
+# IDE e sistema
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+*.log
+# runtime / caches
+*.tmp
+*.tsbuildinfo
+# bancos de desenvolvimento
+*.db
+*.sqlite
+*.sqlite3
