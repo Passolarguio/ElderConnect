@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 import static org.junit.jupiter.api.Assertions.*;
 
 /** Testa o cadastro no banco real; rollback impede deixar usuario ficticio salvo. */
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @ActiveProfiles("postgres")
 @EnabledIfEnvironmentVariable(named = "DB_PASSWORD", matches = ".+")
 @Transactional

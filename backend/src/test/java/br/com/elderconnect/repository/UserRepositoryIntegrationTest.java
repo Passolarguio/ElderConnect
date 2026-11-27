@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Este teste acessa o PostgreSQL REAL. Por seguranca so roda com DB_PASSWORD definido.
  * A transacao e revertida apos o teste: nenhum usuario ficticio fica gravado.
  */
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @ActiveProfiles("postgres")
 @EnabledIfEnvironmentVariable(named = "DB_PASSWORD", matches = ".+")
 @Transactional
